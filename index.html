@@ -29,6 +29,15 @@ padding-top: 8px;
 color: white;
 }
 </style>
+<script src="jquery.slidertron-1.1.js"></script>
+<script>
+$(document).ready(function(){
+  $("li").click(function(){
+    $("li").removeClass("active");
+	$(this).toggleClass("active");
+  });
+});
+</script>
 </head>
 <body bgcolor=#70C6FF>
 <div id="wrapper" class="container">
