@@ -161,7 +161,8 @@ ul.style1 .first {
 }
 
 #menu a:hover {
-	text-decoration: underline;
+	border-top: 2px solid #FF5241;
+	border-bottom: 2px solid #FF5241;
 }
 
 #menu .active a {
