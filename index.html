@@ -50,8 +50,7 @@ function activateTab(selectorID)
 
 function deactivateTab(selector) 
 {
-    $(selector).off('click.twbstab')
-        .closest('li').addClass('disabled');
+    $(selector).off('click.twbstab').closest('li').addClass('disabled');
 }
 
 $('.btn-demo').on('click',function() {
