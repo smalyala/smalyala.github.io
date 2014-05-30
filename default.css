@@ -10,7 +10,6 @@ body {
 	color: #4F4F4F;
 }
 
-
 h1, h2, h3 {
 	margin: 0;
 	padding: 0;
@@ -97,6 +96,12 @@ ul.style1 .first {
 
 #header {
 	overflow: hidden;
+}
+
+/** TAB SLIDING */
+
+#tab-container {
+    overflow:hidden;
 }
 
 /** LOGO */
