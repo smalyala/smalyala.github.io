@@ -1,3 +1,24 @@
+@import 'font-awesome/css/font-awesome.min.css';
+	
+	:root {
+		backgroundColor: #ecf0f1;
+		linkHoverColor:: #0099CC;
+		titleColor: #2c3e50s;
+		headerHeight: 180px;
+		socialSize: 70px;
+		socialCircleOffset: -35px;
+		socialFontSize: 40px;
+		socialMargin: 25px;
+
+		facebookColor: #3B5998;
+		twitterColor: #55ACEE;
+		linkedinColor: #4875B4;
+		envelopeColor: #D14836;
+		rssColor: #FF6600;
+		dropboxColor: #007ee5;
+		githubColor: #000000;
+	}
+
 	body {
 		height:100%;
 		width:100%;
@@ -54,4 +75,92 @@
 
 	.clear {
 		clear:both;
+	}
+	
+	.social {
+		display: none;
+		text-align: center;
+		width: 100%;
+
+		a
+			background rgba(0,0,0,0)
+			border-radius socialSize
+			border 0px !important
+			cursor pointer
+			display inline-block
+			font-size socialFontSize
+			height socialSize 
+			line-height 25px			
+			margin 0 socialMargin
+			position relative
+			text-align center
+			user-select none
+			width socialSize 
+			.circle
+				border-radius 0
+				display block
+				height 0
+				left 50%
+				margin 0
+				position absolute
+				top 50%
+				transition all 0.3s
+				width 0
+			.fa
+				background none
+				color white
+				height socialSize 
+				line-height socialSize 
+				width socialSize 
+				position absolute
+				top 0
+				left 0
+				bottom 0
+				transition all 0.3s
+				z-index 10
+				height 100%
+				text-align center
+			&:hover
+				.circle
+					width socialSize 
+					height socialSize 
+					border-radius socialSize 
+					margin socialCircleOffset
+				.fa
+					color #FFF !important
+			&.facebook
+				.circle
+					background facebookColor
+				.fa
+					color facebookColor
+			&.twitter
+				.circle
+					background twitterColor
+				.fa
+					color twitterColor
+			&.linkedin
+				.circle
+					background linkedinColor
+				.fa
+					color linkedinColor
+			&.email
+				.circle
+					background envelopeColor
+				.fa
+					color envelopeColor
+			&.rss
+				.circle
+					background rssColor
+				.fa
+					color rssColor
+			&.dropbox
+				.circle
+					background dropboxColor
+				.fa
+					color dropboxColor
+			&.github
+				.circle
+					background githubColor
+				.fa
+					color githubColor
 	}
